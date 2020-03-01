@@ -39,7 +39,7 @@ summary(model_B1)
            # ,pch = ifelse((prob_B1<0.5 & Test_B$y =="no")|(prob_B1>0.5 & Test_B$y =="yes"),1,4)
       )
       
-#Visulize      
+#Visualize      
 # In this plot the red circle represents wrong prediction and the gree circle represents correct prediction
 plot(Y_B1,col=ifelse((prob_B1<0.5 & Test_B$y =="no")|(prob_B1>0.5 & Test_B$y =="yes"),"green","red"))
 confu_B1 <- table(prob_B1>0.5,Test_B$y) ;
